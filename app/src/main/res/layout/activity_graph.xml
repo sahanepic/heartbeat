@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:src="@drawable/Drawer" />
+        android:src="@drawable/drawer" />
 
     <ImageView
         android:layout_width="350dp"

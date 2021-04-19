@@ -147,6 +147,7 @@
             android:textSize="40dp"
             android:textColor="@color/white"
             android:layout_gravity="center"
+            />
     </LinearLayout>
 
 
