@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/primary_black" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:background="@color/primary_black" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="35dp" android:layout_marginTop="16dp" android:layout_marginRight="35dp">
+            <TextView android:textSize="16sp" android:textColor="@color/primary_white" android:gravity="start" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/basic_info" android:textAllCaps="true"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="start" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="35dp" android:layout_marginTop="20dp" android:layout_marginRight="35dp" android:baselineAligned="false">
+            <com.google.android.material.textfield.TextInputLayout android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <EditText android:textSize="16sp" android:textColor="@color/primary_white" android:gravity="start" android:id="@+id/edittext_yob" android:background="@color/primary_black" android:layout_width="100dp" android:layout_height="match_parent" android:hint="@string/yob" android:maxLines="1" android:maxLength="4" android:popupBackground="@color/secondary_black_shadow" android:inputType="number" android:imeOptions="actionDone"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <EditText android:textSize="16sp" android:textColor="@color/primary_white" android:gravity="start" android:id="@+id/edittext_weight" android:background="@color/primary_black" android:layout_width="100dp" android:layout_height="match_parent" android:hint="@string/weight_kg" android:maxLines="1" android:maxLength="3" android:popupBackground="@color/secondary_black_shadow" android:inputType="number" android:imeOptions="actionDone"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <View android:background="@color/secondary_black_shadow" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="40dp" android:layout_marginTop="40dp" android:layout_marginRight="40dp" android:layout_marginBottom="40dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="35dp" android:layout_marginRight="35dp">
+            <TextView android:textSize="16sp" android:textColor="@color/primary_white" android:gravity="start" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/flash" android:textAllCaps="true"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="35dp" android:layout_marginTop="20dp" android:layout_marginRight="35dp">
+            <TextView android:textSize="14sp" android:textColor="@color/primary_grey" android:gravity="start" android:layout_gravity="center_vertical" android:paddingLeft="10dp" android:paddingRight="0dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/use_flash" android:layout_weight="1"/>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <CheckBox android:layout_gravity="center" android:id="@+id/checkbox_flash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:checked="true" android:text=""/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/secondary_black_shadow" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="40dp" android:layout_marginTop="40dp" android:layout_marginRight="40dp" android:layout_marginBottom="40dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="35dp" android:layout_marginRight="35dp">
+            <TextView android:textSize="16sp" android:textColor="@color/primary_white" android:gravity="start" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/measurement_accuracy" android:textAllCaps="true"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="35dp" android:layout_marginTop="20dp" android:layout_marginRight="35dp">
+            <TextView android:textSize="14sp" android:textColor="@color/primary_grey" android:gravity="start" android:layout_gravity="center_vertical" android:paddingLeft="10dp" android:paddingRight="0dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/normal" android:layout_weight="1"/>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <CheckBox android:layout_gravity="center" android:id="@+id/checkbox_normalaccuracy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:checked="true" android:text=""/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="35dp" android:layout_marginTop="10dp" android:layout_marginRight="35dp">
+            <TextView android:textSize="14sp" android:textColor="@color/primary_grey" android:gravity="start" android:layout_gravity="center_vertical" android:paddingLeft="10dp" android:paddingRight="0dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/high" android:layout_weight="1"/>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <CheckBox android:layout_gravity="center" android:id="@+id/checkbox_highaccuracy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:checked="true" android:text=""/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/secondary_black_shadow" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="40dp" android:layout_marginTop="40dp" android:layout_marginRight="40dp" android:layout_marginBottom="40dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="35dp" android:layout_marginRight="35dp">
+            <TextView android:textSize="16sp" android:textColor="@color/primary_white" android:gravity="start" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/traces" android:textAllCaps="true"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="35dp" android:layout_marginTop="20dp" android:layout_marginRight="35dp">
+            <TextView android:textSize="14sp" android:textColor="@color/primary_grey" android:gravity="start" android:layout_gravity="center_vertical" android:paddingLeft="10dp" android:paddingRight="0dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/save_heart_waves" android:layout_weight="1"/>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <CheckBox android:layout_gravity="center" android:id="@+id/checkbox_save_trace" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:checked="true" android:text=""/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/secondary_black_shadow" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="40dp" android:layout_marginTop="40dp" android:layout_marginRight="40dp" android:layout_marginBottom="40dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="35dp" android:layout_marginTop="0dp" android:layout_marginRight="35dp">
+            <TextView android:textSize="16sp" android:textColor="@color/primary_white" android:gravity="start" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stop_after_12_sec" android:textAllCaps="true"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="35dp" android:layout_marginTop="20dp" android:layout_marginRight="35dp" android:layout_marginBottom="0dp" android:baselineAligned="false">
+            <com.google.android.material.textfield.TextInputLayout android:gravity="start" android:paddingLeft="10dp" android:paddingRight="0dp" android:paddingBottom="0dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <EditText android:textSize="20sp" android:textColor="@color/primary_white" android:id="@+id/edittext_measurement_time" android:background="@color/primary_black" android:layout_width="200dp" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="5" android:popupBackground="@color/secondary_black_shadow" android:inputType="number" android:windowSoftInputMode="stateHidden" android:imeOptions="actionDone"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <View android:background="@color/secondary_black_shadow" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="40dp" android:layout_marginTop="40dp" android:layout_marginRight="40dp" android:layout_marginBottom="40dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="35dp" android:layout_marginRight="35dp">
+            <TextView android:textSize="16sp" android:textColor="@color/primary_white" android:gravity="start" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sound" android:textAllCaps="true"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="35dp" android:layout_marginTop="20dp" android:layout_marginRight="35dp">
+            <TextView android:textSize="14sp" android:textColor="@color/primary_grey" android:gravity="start" android:layout_gravity="center_vertical" android:paddingLeft="10dp" android:paddingRight="0dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/beep_with_pulse" android:layout_weight="1"/>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <CheckBox android:layout_gravity="center" android:id="@+id/checkbox_sound" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:checked="true" android:text=""/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/secondary_black_shadow" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="40dp" android:layout_marginTop="40dp" android:layout_marginRight="40dp" android:layout_marginBottom="40dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="35dp" android:layout_marginRight="35dp">
+            <TextView android:textSize="16sp" android:textColor="@color/primary_white" android:gravity="start" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/google_fit" android:textAllCaps="true"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="35dp" android:layout_marginTop="20dp" android:layout_marginRight="35dp">
+            <TextView android:textSize="14sp" android:textColor="@color/primary_grey" android:gravity="start" android:layout_gravity="center_vertical" android:id="@+id/textView5" android:paddingLeft="10dp" android:paddingRight="0dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/save_heart_2_gfit" android:layout_weight="1"/>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <CheckBox android:layout_gravity="center" android:id="@+id/checkbox_googlefit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:checked="true" android:text=""/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/secondary_black_shadow" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="40dp" android:layout_marginTop="40dp" android:layout_marginRight="40dp" android:layout_marginBottom="10dp"/>
+        <Button android:textSize="16sp" android:textColor="@color/primary_white" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/export_button" android:paddingTop="30dp" android:paddingBottom="30dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="0dp" android:layout_marginRight="25dp" android:layout_marginBottom="20dp" android:text="@string/export_to_csv" style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+</ScrollView>

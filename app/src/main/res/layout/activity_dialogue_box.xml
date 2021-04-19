@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DialogueBox"
+    android:background="#213141">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="76"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:textSize="90dp"
+                android:textStyle="bold"
+                android:id="@+id/txt8"
+                android:layout_marginTop="50dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BPM"
+                android:layout_toRightOf="@id/txt8"
+                android:layout_marginTop="50dp"
+                android:textSize="30dp"/>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LABEL"
+            android:layout_marginLeft="60dp"
+            android:textSize="25dp"
+            android:textColor="@color/white"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Text"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="20dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/material_on_surface_stroke"
+                android:text="IGNORE"
+                android:padding="15dp"
+                android:textSize="20dp"
+                android:id="@+id/btn"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/material_on_surface_stroke"
+                android:text="SAVE"
+                android:padding="15dp"
+                android:textColor="#DC14C6"
+                android:textSize="20dp"
+                android:id="@+id/btn1"
+                android:layout_toRightOf="@id/btn"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"/>
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

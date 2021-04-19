@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PulseOximeter"
+    android:background="#213141">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Results"
+    android:textColor="@color/white"
+    android:textSize="20dp"
+    android:padding="10dp"/>
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Pulse Oximeter"
+    android:textColor="@color/white"
+    android:textSize="20dp"
+    android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txt1"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/setting"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tap START to begin"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="25dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FINISHED"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="25dp"
+            android:textColor="@android:color/holo_red_dark"/>
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="66"
+            android:layout_marginLeft="130dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="80dp"
+            android:textColor="@android:color/holo_green_light"
+            android:textStyle="bold"
+            android:id="@+id/txt3"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/asd"
+            android:id="@+id/txt4"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/txt3"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="BPM"
+               android:id="@+id/txt5"
+               android:layout_below="@id/txt4"
+               android:layout_toRightOf="@id/txt3"
+               android:layout_marginLeft="22dp"
+               android:textSize="25dp"
+               android:textColor="@color/white"/>
+       </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Measuring heart rate"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:layout_gravity="center"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SpO2"
+            android:textSize="40dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="90dp"
+            android:id="@+id/txt6"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="97%"
+            android:textSize="40dp"
+            android:textColor="@android:color/holo_green_light"
+            android:layout_marginLeft="50dp"
+            android:textStyle="bold"
+            android:id="@+id/txt7"
+            android:layout_toRightOf="@id/txt6"
+           />
+
+
+
+        </RelativeLayout>
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/line"
+    android:layout_gravity="center"
+    android:layout_marginTop="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="START"
+            android:textSize="40dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

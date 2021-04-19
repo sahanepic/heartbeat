@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/cd_edit_exe" android:background="@color/primary_black" android:layout_width="300dp" android:layout_height="wrap_content">
+    <TextView android:textSize="18sp" android:textColor="@color/primary_white" android:id="@+id/yourfeedback" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:layout_marginTop="30dp" android:layout_marginRight="20dp" android:layout_marginBottom="20dp" android:text="Based on your experience with this version of app, would you recommend it to a friend?"/>
+    <RadioGroup android:id="@+id/radioGroup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:layout_marginBottom="30dp">
+        <androidx.appcompat.widget.AppCompatRadioButton android:textSize="16sp" android:id="@+id/definitely" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10sp" android:text="Definitely"/>
+        <androidx.appcompat.widget.AppCompatRadioButton android:textSize="16sp" android:id="@+id/probably" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10sp" android:text="Probably"/>
+        <androidx.appcompat.widget.AppCompatRadioButton android:textSize="16sp" android:id="@+id/maybe" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10sp" android:text="Maybe"/>
+        <androidx.appcompat.widget.AppCompatRadioButton android:textSize="16sp" android:id="@+id/probably_not" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10sp" android:text="Probably not"/>
+        <androidx.appcompat.widget.AppCompatRadioButton android:textSize="16sp" android:id="@+id/definitely_not" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10sp" android:text="Definitely not"/>
+    </RadioGroup>
+</LinearLayout>

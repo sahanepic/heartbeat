@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/primary_black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="bottom|center_vertical|center_horizontal|center"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="0"
+        app:layout_constraintTop_toTopOf="0">
+
+        <SurfaceView
+            android:id="@+id/preview"
+            android:layout_width="72dp"
+            android:layout_height="88dp" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_heart"
+        android:layout_width="160sp"
+        android:layout_height="160sp"
+        android:tint="@color/primary_white"
+        app:layout_constraintBottom_toTopOf="@+id/txt_dia"
+        app:layout_constraintEnd_toEndOf="0"
+        app:layout_constraintStart_toStartOf="0"
+        app:layout_constraintTop_toTopOf="0"
+        app:srcCompat="@drawable/ic_heart" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_hr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="64"
+        android:textColor="@color/primary_black"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_heart"
+        app:layout_constraintEnd_toEndOf="@+id/image_heart"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/image_heart"
+        app:layout_constraintTop_toTopOf="@+id/image_heart"
+        app:layout_constraintVertical_bias="0.401" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/primary_white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/pickers"
+        app:layout_constraintEnd_toEndOf="0"
+        app:layout_constraintStart_toStartOf="0"
+        app:layout_constraintTop_toBottomOf="@+id/image_heart" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/pickers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/linechart"
+        app:layout_constraintEnd_toEndOf="0"
+        app:layout_constraintStart_toStartOf="0"
+        app:layout_constraintTop_toBottomOf="@+id/txt_dia">
+
+        <NumberPicker
+            android:id="@+id/duration_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="0"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/mode_picker"
+            app:layout_constraintTop_toTopOf="0" />
+
+        <NumberPicker
+            android:id="@+id/mode_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/duration_picker"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="0"
+            app:layout_constraintTop_toTopOf="0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/linechart"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/start_button"
+        app:layout_constraintEnd_toEndOf="0"
+        app:layout_constraintStart_toStartOf="0"
+        app:layout_constraintTop_toBottomOf="@+id/pickers" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/start_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginBottom="16dp"
+        android:text="Start"
+        android:textColor="@color/primary_white"
+        app:backgroundTint="@color/secondary"
+        app:layout_constraintBottom_toBottomOf="0"
+        app:layout_constraintEnd_toEndOf="0"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

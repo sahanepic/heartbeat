@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:background="@drawable/cardview_background" android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/primary_black" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="4">
+            <com.androidplot.xy.XYPlot android:id="@+id/mySimpleXYPlot" android:layout_width="wrap_content" android:layout_height="wrap_content" app:backgroundColor="@color/primary_black" app:borderColor="@color/primary_black" app:domainLineColor="@color/primary_black" app:domainLineThickness="0dp" app:domainOriginLineColor="@color/primary_black" app:domainOriginLineThickness="0dp" app:domainTitleHeight="0dp" app:graphBackgroundColor="@color/primary_black" app:graphMarginBottom="0dp" app:graphMarginRight="15dp" app:gridBackgroundColor="@color/primary_black" app:gridClippingEnabled="false" app:legendIconHeight="0dp" app:legendTextSize="0dp" app:lineLabelAlignBottom="1" app:lineLabelAlignLeft="1" app:lineLabelInsetBottom="0dp" app:lineLabelInsetLeft="0dp" app:lineLabelRotationBottom="0" app:lineLabelTextColorBottom="@color/primary_grey" app:lineLabelTextColorLeft="@color/primary_grey" app:lineLabelTextSizeBottom="12dp" app:lineLabelTextSizeLeft="12dp" app:rangeOriginLineThickness="0dp" app:rangeTitleWidth="0dp" app:titleTextSize="0dp" style="@style/APDefacto"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="2">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18sp" android:textColor="@color/secondary_white" android:gravity="center" android:id="@+id/textView3" android:layout_width="0sp" android:layout_height="wrap_content" android:text="@string/avg" android:layout_weight="1"/>
+                <RelativeLayout android:layout_width="0sp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textSize="24sp" android:textColor="@color/primary_white" android:id="@+id/text_avg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerInParent="true"/>
+                    <TextView android:textSize="6sp" android:textColor="@color/secondary_white" android:paddingLeft="40dp" android:paddingRight="0dp" android:paddingBottom="25dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bpm" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <TextView android:textSize="16sp" android:textColor="@color/primary_white" android:gravity="center" android:paddingBottom="0dp" android:layout_width="0sp" android:layout_height="wrap_content" android:text="" android:layout_weight="1.5" android:textAllCaps="true"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18sp" android:textColor="@color/secondary_white" android:gravity="center" android:id="@+id/textView2" android:layout_width="0sp" android:layout_height="wrap_content" android:text="@string/min" android:layout_weight="1"/>
+                <RelativeLayout android:layout_width="0sp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textSize="24sp" android:textColor="@color/primary_white" android:id="@+id/text_min" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerInParent="true"/>
+                    <TextView android:textSize="6sp" android:textColor="@color/secondary_white" android:paddingLeft="40dp" android:paddingRight="0dp" android:paddingBottom="25dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bpm" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <TextView android:textSize="16sp" android:textColor="@color/primary_white" android:gravity="center" android:id="@+id/text_min_date" android:paddingBottom="0dp" android:layout_width="0sp" android:layout_height="wrap_content" android:layout_weight="1.5" android:textAllCaps="true"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18sp" android:textColor="@color/secondary_white" android:gravity="center" android:layout_width="0sp" android:layout_height="wrap_content" android:text="@string/max" android:layout_weight="1"/>
+                <RelativeLayout android:layout_width="0sp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textSize="24sp" android:textColor="@color/primary_white" android:id="@+id/text_max" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerInParent="true"/>
+                    <TextView android:textSize="6sp" android:textColor="@color/secondary_white" android:paddingLeft="40dp" android:paddingRight="0dp" android:paddingBottom="25dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bpm" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <TextView android:textSize="16sp" android:textColor="@color/primary_white" android:gravity="center" android:id="@+id/text_max_date" android:paddingBottom="0dp" android:layout_width="0sp" android:layout_height="wrap_content" android:text="" android:layout_weight="1.5" android:textAllCaps="true"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
